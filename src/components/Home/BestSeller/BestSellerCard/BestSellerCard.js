@@ -7,6 +7,7 @@ const BestSellerCard = () => {
                 <div className='img-product relative'>
                     
                 </div>
+                <h4 className='des-font capital title-product'> </h4>
                 
             </div>
             
