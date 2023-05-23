@@ -1,0 +1,112 @@
+.owl-carousel{
+    height: 100%;
+    position: relative;
+}
+.owl-stage-outer{
+    height: 100%;
+}
+.owl-carousel .owl-stage-outer .owl-item {
+    height: 100%;
+}
+.owl-carousel .owl-stage-outer .owl-item .item1{
+    background-image: url(./images/bg3.webp);
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.owl-carousel .owl-stage-outer .owl-item .item2{
+    background-image: url(./images/HD-wallpaper-lemon-3d-food-fruits-slice-yellow-leaf.jpg);
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.owl-carousel .owl-stage-outer .owl-item .item3{
+    background-image: url(./images/mandarin-fruits-on-tree-background-260nw-284803196.jpg);
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.owl-carousel .owl-nav{
+    position: absolute;
+    top: 40%;
+    width: 100%;
+
+}
+.owl-carousel .owl-nav .owl-next{
+    position: absolute;
+    right: 0;
+    visibility: hidden;
+}
+.owl-carousel .owl-nav .owl-prev{
+    position: absolute;
+    left: 0;
+    visibility: hidden;
+}
+
+.owl-carousel .owl-nav .owl-next::after{
+    visibility: visible;
+    content: '>';
+    font-size: 20px;
+    padding: 4px 7px;
+    background-color: bisque;
+    color: black;
+
+}
+.owl-carousel .owl-nav .owl-prev::after{
+    visibility: visible;
+    content: '<';
+    font-size: 20px;
+    padding: 4px 7px;
+    background-color: bisque;
+    color: black;
+
+}
+
+/* dotted button  */
+
+.owl-carousel .owl-dots{
+    position: absolute;
+    top: 90%;
+    width: 100%;
+    align-items: center;
+}
+
+/* Carousel text style */
+.owl-carousel .carousel-text{
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    z-index: 1000;
+}
+
+.owl-carousel .carousel-text h3{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+   
+}
+.owl-carousel .carousel-text h2{
+    font-size: 40px;
+}
+.owl-carousel .owl-item .item1 .carousel-text{
+    background-color: rgb(145, 143, 143, 0.08);
+    padding: 5%;
+    color: wheat;
+}
+.owl-carousel .owl-item .item1 .carousel-text button{
+    color: white;
+}
+
+.owl-carousel .owl-item .carousel-text button{
+    background: none;
+    padding: 2%;
+    border-radius: 5px;
+    
+}
+.owl-carousel .owl-item .carousel-text:hover button{
+    background-color: rgb(197, 197, 12) !important;
+}

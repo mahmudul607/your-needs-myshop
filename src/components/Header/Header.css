@@ -1,0 +1,44 @@
+.header-logo-area img{
+    width: 100px;
+    height: 80px;
+    padding-top: 1%;
+}
+.header{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 41.666667%;
+    background-color: white;
+    
+}
+.header-logo-area{
+    display: flex;
+    padding-left: 5% !important;
+}
+.header-user-area{
+    grid-template-columns: auto auto auto auto;
+    padding: 5%;
+}
+.header-user-area li{
+    list-style: none;
+    font-size: 25px;
+}
+.sticky-top{
+    animation: animation1 0.5s ease-in-out;
+}
+
+  @keyframes animation1{
+    0% {
+        transform: translateY(-100%);
+      }
+      100% {
+        transform: translateY(0);
+      }
+
+  }
+  .row {
+	
+	margin-top: calc(0 * var(--bs-gutter-y)) !important;
+	margin-right: calc(0 * var(--bs-gutter-x)) !important;
+	margin-left: calc(0 * var(--bs-gutter-x)) !important;
+}
+  
