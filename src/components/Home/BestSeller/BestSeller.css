@@ -25,3 +25,8 @@
 	margin-bottom: .5rem;
 	
 }
+.best-seller .best-seller-area{
+	
+	display: flex;
+	flex-wrap: wrap;
+}

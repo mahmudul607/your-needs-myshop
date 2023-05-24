@@ -1,9 +1,11 @@
 import React from 'react';
 import './BestSeller.css';
 import BestSellerCard from './BestSellerCard/BestSellerCard';
+import fakeData2 from '../../../fakeData2';
 const BestSeller = () => {
+    const seller = fakeData2
     return (
-        <div className='container mt-5 pb-3 br-bottom'>
+        <div className='best-seller container mt-5 pb-3 br-bottom'>
         <div className='text-center'>
             <h3 className='title_heading'>
                 Best Seller
@@ -11,8 +13,10 @@ const BestSeller = () => {
             <p>Best Seller Product This Week!</p>
             
         </div>
-        <div>
-            <BestSellerCard></BestSellerCard>
+        <div className='best-seller-area'>
+            {
+                seller.map(seller => <BestSellerCard seller={seller} key={seller.key}></BestSellerCard>)
+            }
         </div>
     </div>
     );

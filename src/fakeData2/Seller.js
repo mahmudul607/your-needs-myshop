@@ -6,7 +6,7 @@ var Seller = [
         imgUrl:'https://i.ibb.co/rsPnhK3/banana-plant-with-ripe-fruit.webp',
         store:'10000pcs',
         exporter: 'Mango Bar Ltd',
-        price:'150tk/pcs'
+        price:'150'
     
     },
     {
@@ -16,7 +16,7 @@ var Seller = [
         imgUrl:'https://i.ibb.co/xGPCw31/2687319.webp',
         store:'20000pcs',
         exporter: 'Mango Bar Ltd',
-        price:'140tk/pcs'
+        price:'140'
     },
     {
         seller:'Daily Shop',
@@ -25,7 +25,7 @@ var Seller = [
         imgUrl:'https://i.ibb.co/kxYGfgT/banana-tree-bunch-ripe-bananas-detailed-view-to-growing-yellow-plantage-rainforest-mountains-funchal.jpg',
         store:'12000pcs',
         exporter: 'Mango Bar Ltd',
-        price:'130tk/pcs'
+        price:'130'
     },
     {
         seller:'All in One',
@@ -34,7 +34,7 @@ var Seller = [
         imgUrl:'https://i.ibb.co/zmwT54y/Banana.jpg',
         store:'8000pcs',
         exporter: 'Mango Bar Ltd',
-        price:'160tk/pcs'
+        price:'160'
         
     },
     {
@@ -44,7 +44,7 @@ var Seller = [
         imgUrl:'https://i.ibb.co/rsPnhK3/banana-plant-with-ripe-fruit.webp',
         store:'10000pcs',
         exporter: 'Mango Bar Ltd',
-        price:'150tk/pcs'
+        price:'150'
     
     },
     {
@@ -54,7 +54,7 @@ var Seller = [
         imgUrl:'https://i.ibb.co/xGPCw31/2687319.webp',
         store:'20000pcs',
         exporter: 'Mango Bar Ltd',
-        price:'140tk/pcs'
+        price:'140'
     },
     {
         seller:'Your Needs',
@@ -63,7 +63,7 @@ var Seller = [
         imgUrl:'https://i.ibb.co/kxYGfgT/banana-tree-bunch-ripe-bananas-detailed-view-to-growing-yellow-plantage-rainforest-mountains-funchal.jpg',
         store:'12000pcs',
         exporter: 'Mango Bar Ltd',
-        price:'130tk/pcs'
+        price:'130'
     },
     {
         seller:'We are at Your Door',
@@ -72,7 +72,7 @@ var Seller = [
         imgUrl:'https://i.ibb.co/zmwT54y/Banana.jpg',
         store:'8000pcs',
         exporter: 'Mango Bar Ltd',
-        price:'160tk/pcs'
+        price:'160'
         
     }
     ]
