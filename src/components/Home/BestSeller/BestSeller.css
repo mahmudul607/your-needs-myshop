@@ -1,3 +1,6 @@
+.best-seller{
+	margin-bottom: 50px;
+}
 .title_heading::before {
 	content: "";
 	width: 50%;

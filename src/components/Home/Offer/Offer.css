@@ -1,0 +1,49 @@
+.offer-area{
+    height: 600px;
+    width: 100%;
+    background-image: url(../img/bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    text-align: center;
+    display: grid;
+    margin-bottom: 50px;
+   
+}
+.offer-area .offer-card-area .offer-card-inner .offer-text{
+    margin-bottom: 5%;
+}
+
+
+.offer-area .offer-card-area{
+    background-color: white;
+    width: 100%;
+    max-width: 60%;
+    padding: 15px;
+    margin: auto;
+}
+.offer-area .offer-card-area .offer-card-inner{
+    border: 1px solid rgba(222, 222, 222, 0.75);
+    padding: 100px;
+ 
+}
+.offer-area .offer-card-area .offer-btn {
+    display: flex;
+    justify-content: center;
+}
+.offer-area .offer-card-area .offer-btn .shop-now-btn{
+    text-transform: uppercase;
+    padding: 2%;
+    border: 1px solid rgb(27, 27, 26);
+    width: 120px;
+    text-align: center;
+    margin-left: 5px;
+    bottom: 0;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.offer-area .offer-card-area .offer-btn .shop-now-btn:hover{
+    background-color: rgb(185, 247, 149);
+
+}

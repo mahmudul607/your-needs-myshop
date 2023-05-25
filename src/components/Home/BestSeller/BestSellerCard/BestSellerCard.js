@@ -1,5 +1,8 @@
 import React from 'react';
 import'./BestSellerCard.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEllipsis, faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faHeart } from '@fortawesome/free-regular-svg-icons';
 const BestSellerCard = (props) => {
 
     const data = props.seller;
@@ -7,19 +10,24 @@ const BestSellerCard = (props) => {
         <div className='product-item col-lg-3 col-6 col-md-4 col-sm-2'>
             <div className='product mb-30 relative'>
                 <div className='img-product relative'>
-                    <img src={data.imgUrl} alt=""/>
+                    <img className='original' src={data.imgUrl} alt=""/>
+                    <img className='hover-img' src={data.imgUrl1} alt=""/>
+
                 </div>
                 <div className='hover-icon'>
                     <ul>
                         <li className='select-options'>
-                            <span>select-options</span>
                             
+                            
+                            <span title='Select Options' data-placement='top'><FontAwesomeIcon icon={faEllipsis}></FontAwesomeIcon></span> 
                         </li>
                         <li className='quickview'>
-                            <span>QuickView</span>
+                            
+                            <span title='QuickView'><FontAwesomeIcon icon={faSearch}></FontAwesomeIcon></span> 
                         </li>
                         <li className='add-to-wishlist'>
-                            <span>add-to-wishlist</span>
+                            
+                            <span title='Add to WishList'><FontAwesomeIcon icon={faHeart}></FontAwesomeIcon></span> 
                         </li>
                     </ul>
                     
