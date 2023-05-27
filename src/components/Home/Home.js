@@ -5,6 +5,7 @@ import Discount from './Discount';
 import BestSeller from './BestSeller/BestSeller';
 import Offer from './Offer/Offer';
 import HotDeal from './HotDeal/HotDeal';
+import OurBlogs from './OurBlogs/OurBlogs';
 const Home = () => {
     return (
         <div className='home-area'>
@@ -17,6 +18,7 @@ const Home = () => {
             <BestSeller></BestSeller>
             <Offer></Offer>
             <HotDeal></HotDeal>
+            <OurBlogs></OurBlogs>
         </div>
     );
 };
