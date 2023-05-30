@@ -6,6 +6,7 @@ import BestSeller from './BestSeller/BestSeller';
 import Offer from './Offer/Offer';
 import HotDeal from './HotDeal/HotDeal';
 import OurBlogs from './OurBlogs/OurBlogs';
+import Instagram from './Instagram/Instagram';
 const Home = () => {
     return (
         <div className='home-area'>
@@ -19,6 +20,7 @@ const Home = () => {
             <Offer></Offer>
             <HotDeal></HotDeal>
             <OurBlogs></OurBlogs>
+            <Instagram></Instagram>
         </div>
     );
 };

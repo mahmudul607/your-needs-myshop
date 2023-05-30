@@ -7,14 +7,12 @@ const BestSellerCard = (props) => {
 
     const data = props.seller;
     return (
-        <div className='product-item col-lg-3 col-6 col-md-4 col-sm-2'>
+        <div className='product-item col-lg-3  col-md-4 col-sm-6'>
             <div className='product mb-30 relative'>
                 <div className='img-product relative'>
                     <img className='original' src={data.imgUrl} alt=""/>
                     <img className='hover-img' src={data.imgUrl1} alt=""/>
-
-                </div>
-                <div className='hover-icon'>
+                    <div className='hover-icon'>
                     <ul>
                         <li className='select-options'>
                             
@@ -32,6 +30,8 @@ const BestSellerCard = (props) => {
                     </ul>
                     
                 </div>
+                </div>
+                
                 <div className='seller-text'>
                 <h5 className='des-font capital title-product'>{data.seller}</h5>
                 <h4 className='price-area'>$ {data.price}</h4>

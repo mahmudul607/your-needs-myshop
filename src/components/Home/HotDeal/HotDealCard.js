@@ -5,7 +5,7 @@ import React from 'react';
 const HotDealCard = (props) => {
     const data = props.pd
     return (
-        <div className='product-item col-lg-3 col-6 col-md-4 col-sm-2'>
+        <div className='product-item col-lg-3 col-6 col-md-4 col-sm-6'>
 <div className='product mb-30 relative'>
     <div className='img-product relative'>
         <img className='original' src={data.imgUrl} alt=""/>

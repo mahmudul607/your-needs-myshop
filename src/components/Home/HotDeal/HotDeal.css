@@ -1,4 +1,5 @@
 .product-card-area{
     display: flex;
     padding: 1%;
+    flex-wrap: wrap;
 }

@@ -62,15 +62,19 @@
 }
 
 .product-item .product .hover-icon{
-    display: none;
-    
+    visibility: hidden;
+    position: absolute;
+    bottom: 22%;
+    transition: all .3s ease-in-out;
 }
 .product-item:hover .product .hover-icon{
-    display: block;
-    position: absolute;
+    visibility: visible;
     bottom: 28%;
     width: 100%;
-    animation: hoverAnimate 1s ease;
+    transition: all .5s ease-in-out;
+    
+    
+    
     
 
 }
@@ -85,10 +89,10 @@
     }
 }
 
-.product-item .product .hover-icon ul .select-options:hover span, .product-item .product .hover-icon ul .quickview:hover span, .product-item .product .hover-icon ul .add-to-wishlist:hover li{
+/* .product-item .product .hover-icon ul .select-options:hover span, .product-item .product .hover-icon ul .quickview:hover span, .product-item .product .hover-icon ul .add-to-wishlist:hover li{
     display: block;
   
-}
+} */
 .product-item .product .hover-icon ul li:hover{
     background-color: green;
 }
@@ -96,6 +100,7 @@
     list-style: none;
     height: 50px;
     width: 50px;
+    margin-right: 32px;
     background-color:white;
     align-items: center;
     display: flex;
@@ -106,8 +111,7 @@
     font-size: 22px;
 }
 .product-item .product .hover-icon ul {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    margin: auto;
-    padding: auto;
+    display: flex;
+    
+
 }

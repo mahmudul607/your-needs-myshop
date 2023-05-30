@@ -1,57 +1,111 @@
-.owl-carousel{
-    height: 500px;
+
+.carousel2 {
+    height: 300px;
+    width: 100% !important;
     position: relative;
-    margin-bottom: 50px;
+   
 }
-.owl-stage-outer{
-    height: 100%;
+/* .carousel2 .owl-item{
+  position: relative;
+ 
+} */
+.carousel2 .item1, .carousel2 .item2, .carousel2 .item3{
+    position: relative;
 }
-.owl-carousel .owl-stage-outer .owl-item {
-    height: 100%;
+.carousel2 .owl-item::before{
+    font-family: "Font Awesome 5 Free";
+     font-size: 25px;
+     width: 20%;
+     height: 20%;
+     content: "\40";
+     position: absolute;
+     z-index: 999;
+     display: flex;
+     top: 50%;
+     left: 50%;
+   
+
+}
+.carousel2 .owl-item::before:hover{
+    color: blue;
+}
+.carousel2 .owl-stage-outer .owl-item:hover .item1, .carousel2 .owl-stage-outer .owl-item:hover .item2, .carousel2 .owl-stage-outer .owl-item:hover .item3{
+    scale: 1.2;
+    transition: all 1s ease-in-out;
+}
+.carousel2 .owl-stage-outer .owl-item:hover .carousel-text{
+    content: "";
     width: 100%;
-    margin-left: .2%;
-}
-.owl-carousel .owl-stage-outer .owl-item .item1{
-    background-image: url(./images/bg3.webp);
-    height: 400px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.owl-carousel .owl-stage-outer .owl-item .item2{
-    background-image: url(./images/HD-wallpaper-lemon-3d-food-fruits-slice-yellow-leaf.jpg);
-    height: 400px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.owl-carousel .owl-stage-outer .owl-item .item3{
-    background-image: url(./images/mandarin-fruits-on-tree-background-260nw-284803196.jpg);
-    height: 400px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    height: 100%;
+    background-color: hsl(0, 0%, 50%, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+
 }
 
-.owl-carousel .owl-nav{
+.carousel2 .owl-stage-outer .owl-item .item1{
+    background-image: url(./images/bg3.webp);
+    height: 250px;
+    width: 98%;
+    padding: .2%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+   
+}
+.carousel2 .owl-stage-outer .item-box{
+    height: 250px;
+    width: 98%;
+    padding: .2%;
+    overflow: hidden !important;
+}
+.carousel2 .owl-stage-outer .owl-item .item2{
+    background-image: url(./images/HD-wallpaper-lemon-3d-food-fruits-slice-yellow-leaf.jpg);
+    height: 250px;
+    width: 98%;
+    padding: .2%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.carousel2 .owl-stage-outer .owl-item .item3{
+    background-image: url(./images/mandarin-fruits-on-tree-background-260nw-284803196.jpg);
+    height: 250px;
+    width: 98%;
+    padding: .2%;
+   
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.carousel2 .owl-nav{
     position: absolute;
     top: 40%;
     width: 100%;
     display: none !important;
 
 }
-.owl-carousel .owl-nav .owl-next{
+.carousel2:hover .owl-nav{
+    
+    display: block !important;
+
+}
+.carousel2 .owl-nav .owl-next{
     position: absolute;
-    right: 0;
+    right: 48px;
     visibility: hidden;
 }
-.owl-carousel .owl-nav .owl-prev{
+.carousel2 .owl-nav .owl-prev{
     position: absolute;
     left: 0;
     visibility: hidden;
 }
 
-.owl-carousel .owl-nav .owl-next::after{
+.carousel2 .owl-nav .owl-next::after{
     visibility: visible;
     content: '>';
     font-size: 20px;
@@ -60,7 +114,7 @@
     color: black;
 
 }
-.owl-carousel .owl-nav .owl-prev::after{
+.carousel2 .owl-nav .owl-prev::after{
     visibility: visible;
     content: '<';
     font-size: 20px;
@@ -72,7 +126,7 @@
 
 /* dotted button  */
 
-.owl-carousel .owl-dots{
+.carousel2 .owl-dots{
     position: absolute;
     top: 90%;
     width: 100%;
@@ -80,37 +134,37 @@
 }
 
 /* Carousel text style */
-.owl-carousel .carousel-text{
+.carousel2 .carousel-text{
     position: absolute;
     top: 30%;
     left: 20%;
-    z-index: 1000;
+    z-index: 500;
 }
 
-.owl-carousel .carousel-text h3{
+.carousel2 .carousel-text h3{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
    
 }
-.owl-carousel .carousel-text h2{
+.carousel2 .carousel-text h2{
     font-size: 40px;
 }
-.owl-carousel .owl-item .item1 .carousel-text{
+.carousel2 .owl-item .item1 .carousel-text{
     background-color: rgb(145, 143, 143, 0.08);
     padding: 5%;
     color: wheat;
 }
-.owl-carousel .owl-item .item1 .carousel-text button{
+.carousel2 .owl-item .item1 .carousel-text button{
     color: white;
 }
 
-.owl-carousel .owl-item .carousel-text button{
+.carousel2 .owl-item .carousel-text button{
     background: none;
     padding: 2%;
     border-radius: 5px;
     
 }
-.owl-carousel .owl-item .carousel-text:hover button{
+.carousel2  .owl-item .carousel-text:hover button{
     background-color: rgb(197, 197, 12) !important;
 }

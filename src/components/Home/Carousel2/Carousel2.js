@@ -3,83 +3,59 @@ import OwlCarousel from 'react-owl-carousel2';
 import '../Carousel2/owl.carousel.css';
 import '../Carousel2/owl.theme.default.css';
 import './Carousel2.css'
+
+
 const Carousel2 = () => {
 
     const options = {
-        items: 3,
+        items: 4,
         nav: true,
         rewind:true,
-        autoplay: true,
+        autoplay: false,
         loop:true
     };
+    
      
    
     return (
-            <OwlCarousel  options={options}>
-                <div className='item1'>
-                  <div className='carousel-text'>
-                  
-                  
-                  </div>
-                </div>
-                <div className='item2'>
+            <OwlCarousel className='carousel2 owl-carousel' options={options}>
+           
+              <div className='item-box'>
+             
+             
+              <div className='item1 icon'>
+                
                 <div className='carousel-text'>
-                 
-                  </div>
+                
+                
+              
                 </div>
-                <div className='item3'>
+              </div>
+                </div>
+              <div className='item-box'>
+              <div className='item2 icon'>
+                
                 <div className='carousel-text'>
-                  
-                  </div>
+                
+                
+              
                 </div>
-                <div className='item1'>
-                  <div className='carousel-text'>
-                  
-                  
-                  </div>
+              </div>
                 </div>
-                <div className='item2'>
+              <div className='item-box'>
+              <div className='item3 icon'>
+                
                 <div className='carousel-text'>
-                 
-                  </div>
+                
+                
+              
                 </div>
-                <div className='item3'>
-                <div className='carousel-text'>
-                  
-                  </div>
+              </div>
                 </div>
-                <div className='item1'>
-                  <div className='carousel-text'>
-                  
-                  
-                  </div>
-                </div>
-                <div className='item2'>
-                <div className='carousel-text'>
-                 
-                  </div>
-                </div>
-                <div className='item3'>
-                <div className='carousel-text'>
-                  
-                  </div>
-                </div>
-                <div className='item1'>
-                  <div className='carousel-text'>
-                  
-                  
-                  </div>
-                </div>
-                <div className='item2'>
-                <div className='carousel-text'>
-                 
-                  </div>
-                </div>
-                <div className='item3'>
-                <div className='carousel-text'>
-                  
-                  </div>
-                </div>
+                
+               
+       
+                
                 
             </OwlCarousel>
     );
