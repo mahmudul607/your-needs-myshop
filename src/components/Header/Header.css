@@ -4,9 +4,9 @@
     padding-top: 1%;
 }
 .header{
-    display: grid;
+    /* display: grid;
     grid-template-columns: auto auto;
-    grid-gap: 41.666667%;
+    grid-gap: 41.666667%; */
     background-color: white;
     
 }
@@ -37,8 +37,10 @@
   }
   .row {
 	
-	margin-top: calc(0 * var(--bs-gutter-y)) !important;
+	/* margin-top: calc(0 * var(--bs-gutter-y)) !important; */
 	margin-right: calc(0 * var(--bs-gutter-x)) !important;
 	margin-left: calc(0 * var(--bs-gutter-x)) !important;
 }
   
+
+/* nav style */

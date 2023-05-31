@@ -1,11 +1,11 @@
 import React from 'react';
 import logo from '../../foody-1.png';
-import { FaDribbble, FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import {  FaCcDiscover, FaCcPaypal, FaCcVisa, FaCreditCard, FaDribbble, FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 import './Footer.css'
 const Footer = () => {
     return (
         <div className='footer'>
-           <div className='row'>
+           <div className='row first-row'>
            <div className='bottom-logo col-lg-3 col-md-12 col-sm-12'>
                 <img src={logo} alt=""/>
                 <p>Sophisticated simplicity for the
@@ -21,9 +21,9 @@ const Footer = () => {
                 <div className='col-lg-3 col-md-4 col-sm-12'>
                     <div className='footer-info'>
                         <div className='footer-title'>
-                            <h3>Help & Information</h3>
+                            <h3 className='info_title'>Help & Information</h3>
                         </div>
-                        <ul>
+                        <ul className='footer-info-ul'>
                             <li>About Us</li>
                             <li>Privacy Policy</li>
                             <li>Terms & Conditions</li>
@@ -37,9 +37,9 @@ const Footer = () => {
                 <div className='col-lg-3 col-md-4 col-sm-12'>
                 <div className='footer-info'>
                         <div className='footer-title'>
-                            <h3>About us</h3>
+                            <h3 className='info_title'>About us</h3>
                         </div>
-                        <ul>
+                        <ul className='footer-info-ul'>
                             <li>Pagination</li>
                             <li>Terms & Conditions</li>
                             <li>Contact</li>
@@ -53,9 +53,9 @@ const Footer = () => {
                 <div className='col-lg-3 col-md-4 col-sm-12'>
                 <div className='footer-info'>
                         <div className='footer-title'>
-                            <h3>Categories</h3>
+                            <h3 className='info_title'>Categories</h3>
                         </div>
-                        <ul>
+                        <ul className='footer-info-ul'>
                             <li>Menu items</li>
                             <li>Help Center</li>
                             <li>Address Store</li>
@@ -69,8 +69,22 @@ const Footer = () => {
 
             
            </div>
-           <div className='footer-bottom'>
-            <h5>mathods</h5>
+           <div className='row copyright  d-flex'>
+            <div className='col-lg-6 col-md-6 text-lg-left text-md-left'>
+                <p>@ Copyright 2023 |  
+                    <a href="https://github.com/mahmudul607"> MyShop</a> By
+                    <a href="https://github.com/mahmudul607"> Ms-Tech</a>
+                </p>
+            </div>
+            <div className='col-lg-6 col-md-6 text-lg-right text-md-right'>
+                  <ul className='d-flex paymethods'>
+                <li><FaCcVisa/></li>
+                <li><FaCcDiscover/></li>
+                <li><FaCcPaypal/></li>
+                <li><FaCreditCard/></li>
+            </ul>
+            </div>
+          
            </div>
             
         </div>

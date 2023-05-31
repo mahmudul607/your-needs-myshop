@@ -2,6 +2,17 @@ ul li{
     list-style: none;
     margin-right: 8%;
     font-size: 20px;
+    font-family: serif;
+}
+.footer .copyright .paymethods{
+    justify-content: right;
+}
+.footer{
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+.footer-info-ul{
+    padding-left: 0 !important;
 }
 .footer .bottom-logo{
     text-align: center;
@@ -15,16 +26,13 @@ ul li{
 }
 .bottom-logo-social-icon {
 	display: flex !important;
-	text-align: center;
+	text-align:center;
+    justify-content: center;
 	
-	align-items: center;
-	justify-content: center;
 }
-.row{
-    margin-bottom: 40px;
-}
+
 .footer .footer-info {
-    text-align: center;
+    text-align: left;
 }
 .footer .footer-info ul li{
     padding-bottom: 2%;
@@ -33,19 +41,81 @@ ul li{
     color: rgb(25, 245, 25);
     cursor: pointer;
 }
+.footer .copyright {
+	width: 100%;
+	margin-top: 45px;
+	justify-content: center;
+	align-items: center;
+	padding-left: 50px;
+    font-size: 12px;
+    border-top: 1px solid #eee;
+}
+.footer .info_title{
+   position: relative;
+   padding-bottom: 2%;
+   font-family: sans-serif;
+}
+.footer .info_title::before {
+	content: "";
+	width: 20%;
+	height: 2px;
+	background: #4b9e22;
+	position: absolute;
+    
+	left: 0%;
+    bottom: 0;
+    
+}
+
 @media (max-width:991.99px) {
 
     .footer .bottom-logo img{
         width: 30% !important;
-        height: 100%;
+        height: 60%;
     }
     .footer .bottom-logo{
         
         text-align: center;
       
     }
+    .footer{
+        text-align: center !important;
+    }
+    .footer .footer-info {
+        text-align: center;
+      }
     ul li{
        
         margin-right: 3%;
     }
+    .footer .info_title::before {
+        content: "";
+        width: 30%;
+        
+        left: 25%;
+        transform: translateX(30%);
+       
+        
+    }
+  
+    
+
+    
+}
+
+@media (max-width:575.99px){
+    .footer .info_title::before {
+        content: "";
+        width: 20%;
+        left: 35%;
+        /* transform: translateX(50%); */
+       
+       
+    }
+    .footer{
+        text-align: center !important;
+    }
+    .footer .footer-info {
+        text-align: center;
+      }
 }

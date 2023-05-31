@@ -1,0 +1,43 @@
+.navbar{
+    
+    padding: .2%;
+    width: 50%;
+    
+}
+.navbar .container-fluid, .navbar .offcanvas, .navbar .offcanvas .offcanvas-body{
+    display: flex;
+}
+.navbar .container-fluid .navbar-brand{
+    width: 20%;
+}
+.navbar .container-fluid .navbar-brand img{
+    width: 92%;
+}
+.navbar > .container, .navbar > .container-fluid, .navbar > .container-lg, .navbar > .container-md, .navbar > .container-sm, .navbar > .container-xl, .navbar > .container-xxl {
+	flex-wrap: nowrap !important;
+}
+.offcanvas-title img{
+    width: 25%;
+}
+
+.navbar .offcanvas{
+    align-items: end;
+    display: flex;
+    padding-left: 8%;
+    
+}
+
+.navbar-nav a, .dropdown-menu a{
+    text-decoration: none !important;
+    text-align: center;
+}
+.navbar-nav{
+    align-items: center;
+}
+.navbar .offcanvas ul li{
+    width: 5%;
+}
+
+.main-nav-items{
+    display: flex;
+}
