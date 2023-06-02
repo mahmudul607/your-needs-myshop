@@ -41,3 +41,16 @@
 .main-nav-items{
     display: flex;
 }
+
+.offcanvas .offcanvas-body .navbar-nav a{
+    text-decoration: none !important;
+    color: gray;
+}
+.offcanvas .offcanvas-body .navbar-nav a:hover{
+    color: black;
+}
+
+.dropdown-toggle::after {
+	display: none !important;
+	
+}

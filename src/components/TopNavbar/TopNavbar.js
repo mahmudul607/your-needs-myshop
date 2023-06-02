@@ -6,7 +6,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { Link } from 'react-router-dom';
-
+import './TopNavbar.css'
 const TopNavbar = () => {
   return (
     <>
@@ -28,9 +28,10 @@ const TopNavbar = () => {
               <Offcanvas.Body>
                 <Nav className="justify-content-start flex-grow-1 pe-3">
                   <Nav.Link ><Link to="../Home">Home</Link></Nav.Link>
-                  <Nav.Link >Link</Nav.Link>
+                  <Nav.Link ><Link to="../Home">Shop</Link></Nav.Link>
+                  <Nav.Link ><Link to="../Home" style={{textDecoration:'none'}}>Blogs</Link></Nav.Link>
                   <NavDropdown
-                    title="Dropdown"
+                    title="Seller"
                     id={`offcanvasNavbarDropdown-expand-${'md'}`}
                   >
                     <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
