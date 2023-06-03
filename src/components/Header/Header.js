@@ -29,7 +29,7 @@ const Header = () => {
       <div className='col-lg-3 col-md-3 col-sm-3 col-xs-3 header-logo-area'>
         <img src={logo} alt=""/>
       </div>
-      <div className='col-lg-5 col-md-5 col-sm-5'>
+      <div className='col-lg-5 col-md-5 col-sm-5 nav-area'>
  
     <TopNavbar></TopNavbar>
       </div>

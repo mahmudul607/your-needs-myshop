@@ -11,7 +11,7 @@ const TopNavbar = () => {
   return (
     <>
      
-        <Navbar key={'md'} bg="light" expand={'md'} className="mb-3">
+        <Navbar key={'md'}  expand={'md'} className="mb-3">
           <Container fluid>
             <Navbar.Brand href="#"></Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${'md'}`} />
@@ -27,9 +27,9 @@ const TopNavbar = () => {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-start flex-grow-1 pe-3">
-                  <Nav.Link ><Link to="../Home">Home</Link></Nav.Link>
-                  <Nav.Link ><Link to="../Home">Shop</Link></Nav.Link>
-                  <Nav.Link ><Link to="../Home" style={{textDecoration:'none'}}>Blogs</Link></Nav.Link>
+                  <Nav.Link ><Link to="../Home"> Home   </Link></Nav.Link>
+                  <Nav.Link ><Link to="../Home"> Shop  </Link></Nav.Link>
+                  <Nav.Link ><Link to="../Home" style={{textDecoration:'none'}}>Blogs </Link></Nav.Link>
                   <NavDropdown
                     title="Seller"
                     id={`offcanvasNavbarDropdown-expand-${'md'}`}

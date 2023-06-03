@@ -44,3 +44,16 @@
   
 
 /* nav style */
+.header .nav-area{
+    font-size: 20px;
+    vertical-align: middle;
+}
+.navbar-expand-md .navbar-nav .nav-link::after{
+    content: ' >';
+    position: absolute;
+    padding-left: 1.5%;
+}
+.navbar-expand-md .navbar-nav .nav-link {
+    padding-right: 15% !important;
+    padding-left: 5% !important;
+  }
