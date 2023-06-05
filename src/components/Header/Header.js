@@ -8,9 +8,9 @@ import TopNavbar from '../TopNavbar/TopNavbar';
 
 
 
-const Header = () => {
+const Header = (props) => {
   const [isSticky, setIsSticky] = useState(false);
-  
+  const {cart} = props;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -38,7 +38,7 @@ const Header = () => {
         <ul className='d-grid header-user-area'>
           <li ><FontAwesomeIcon icon={faSearch} /></li>
           <li><FontAwesomeIcon icon={faUserCircle} /></li>
-          <li><FontAwesomeIcon icon={faHeart} /></li>
+          <li className='top-heart'><FontAwesomeIcon icon={faHeart}/><span>{cart.length}</span></li>
           <li><FontAwesomeIcon icon={faCartShopping} /></li>
         </ul>
       </div>

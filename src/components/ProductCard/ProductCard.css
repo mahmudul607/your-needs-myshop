@@ -1,0 +1,118 @@
+.product-item {
+    margin-bottom: 10px;
+    position: relative;
+   
+}
+.product-item .product{
+    position: relative;
+}
+/* .product-item .product .img-product .hover-img{
+    visibility: hidden;
+    position: absolute;
+    
+   
+  
+} */
+/* .product-item:hover .product .img-product .hover-img{
+  
+    visibility: visible;
+    width: 80%;
+    height: 60%;
+    padding: 5%;
+   transform: translateX(90deg) 1s;
+    
+    
+} */
+.product-item:hover .product .img-product .original{
+    display: block !important;
+    
+    
+}
+
+
+.product-item .product .img-product {
+	width: 95%;
+	height: 250px;
+	background-color: rgba(185, 183, 183, 0.212);
+	margin-left: 1%;
+	text-align: center !important;
+	border-radius: 5%;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+}
+.product-item .product .img-product .original, .product-item .product .img-product .hover-img{
+    width: 80%;
+    height: 80%;
+    padding: 5%;
+    border-radius: 20%;
+}
+.product-item .product .title-product{
+    color: rgb(92, 226, 92);
+    font-family: serif;
+}
+
+.product-item .product .seller-text{
+    text-align: center;
+    padding: 3%;
+}
+.product-item .product .seller-text .price-area{
+    font-family: sans-serif;
+}
+
+.product-item .product .hover-icon{
+    visibility: hidden;
+    position: absolute;
+    bottom: 22%;
+    transition: all .3s ease-in-out;
+}
+.product-item:hover .product .hover-icon{
+    visibility: visible;
+    bottom: 28%;
+    width: 100%;
+    transition: all .5s ease-in-out;
+    display: flex;
+    justify-content: center;
+}
+
+.product-item .product .hover-icon ul li:hover{
+    cursor: pointer;
+}
+
+@keyframes hoverAnimate{
+    0%{    
+            bottom: 22%;
+    
+    }
+    100%{   
+            bottom: 28%;
+    }
+}
+
+/* .product-item .product .hover-icon ul .select-options:hover span, .product-item .product .hover-icon ul .quickview:hover span, .product-item .product .hover-icon ul .add-to-wishlist:hover li{
+    display: block;
+  
+} */
+.product-item .product .hover-icon ul li:hover{
+    background-color: green;
+}
+.product-item .product .hover-icon ul li{
+    list-style: none;
+    height: 50px;
+    width: 50px;
+    margin-right: 32px;
+    background-color:white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+}
+.product-item .product .hover-icon ul li span{
+    font-size: 22px;
+}
+.product-item .product .hover-icon ul {
+    display: flex;
+    
+
+}

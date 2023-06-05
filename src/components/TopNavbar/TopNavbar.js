@@ -28,7 +28,7 @@ const TopNavbar = () => {
               <Offcanvas.Body>
                 <Nav className="justify-content-start flex-grow-1 pe-3">
                   <Nav.Link ><Link to="../Home"> Home   </Link></Nav.Link>
-                  <Nav.Link ><Link to="../Home"> Shop  </Link></Nav.Link>
+                  <Nav.Link ><Link to="../product"> Shop  </Link></Nav.Link>
                   <Nav.Link ><Link to="../Home" style={{textDecoration:'none'}}>Blogs </Link></Nav.Link>
                   <NavDropdown
                     title="Seller"
