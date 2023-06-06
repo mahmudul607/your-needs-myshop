@@ -8,6 +8,7 @@ import HotDeal from './HotDeal/HotDeal';
 import OurBlogs from './OurBlogs/OurBlogs';
 import Instagram from './Instagram/Instagram';
 const Home = () => {
+    
     return (
         <div className='home-area'>
             <div className='topcarousel-area'>

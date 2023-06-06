@@ -10,13 +10,16 @@ import GoToTop from './components/GoToTop/GoToTop';
 import News from './components/News/News';
 import Seller from './components/Seller/Seller';
 import Product from './components/Product/Product';
-import { useState } from 'react';
+import { createContext, useState } from 'react';
 import { addToDatabaseCart } from './utilities/databaseManager';
-
+import fakeData from './fakeData';
+export const AddProductContext = createContext();
 
 function App() {
+  const product = fakeData;
   const [cart, setCart] = useState([]);
-  console.log(cart);
+
+
   const handleAddProduct = (product) =>{
     const sameProduct = cart.find(pd => pd.key === product.key);
   let count = 1;
@@ -36,13 +39,14 @@ function App() {
     addToDatabaseCart(product.key, count);
   }
   return (
-      <BrowserRouter>
+    <AddProductContext.Provider value={[handleAddProduct, product]}>
+        <BrowserRouter>
       <>
           <Header cart={cart}></Header>
           <Routes>
-          <Route path="/home" element={<Home/>}/>
-          <Route path="/" element={<Home/>}/>
-          <Route path="/product" element={<Product handleAddProduct={handleAddProduct}></Product>}/>
+          <Route path="/home" element={<Home></Home>}/>
+          <Route path="/" element={<Home></Home>}/>
+          <Route path="/product" element={<Product handleAddProduct={handleAddProduct} product={product}></Product>}/>
           <Route path="/seller" element={<Seller/>}/>
           <Route path="/news" element={<News/>}/>
               
@@ -54,6 +58,7 @@ function App() {
       
       </>
       </BrowserRouter>
+    </AddProductContext.Provider>
    
   );
 }

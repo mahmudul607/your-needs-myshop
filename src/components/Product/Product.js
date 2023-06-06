@@ -2,14 +2,13 @@ import React from 'react';
 import './Product.css'
 import topimg from '../Home/img/bg2.jpg';
 import ProductCard from '../ProductCard/ProductCard';
-import fakeData from '../../fakeData';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFilter } from '@fortawesome/free-solid-svg-icons';
 import { Button } from 'react-bootstrap';
 const Product = (props) => {
 
-    const product = fakeData;
+    const product =props.product;
     return ( 
         <>
         <div className='topimg-area'>

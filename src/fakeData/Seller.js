@@ -1,7 +1,9 @@
 var Seller = [
     
     {
-        seller:'A-Z Shop',
+        name:'A-Z Shop',
+        key:'ABC17',
+        produce:'seller',
         title:'Banana',
         description:'Bombai Banana export from Rangpur',
         imgUrl:'https://i.ibb.co/rsPnhK3/banana-plant-with-ripe-fruit.webp',
@@ -12,7 +14,9 @@ var Seller = [
     
     },
     {
-        seller:'Sadia Mart',
+        name:'Sadia Mart',
+        key:'ABC18',
+        produce:'seller',
         title:'Banana',
         description:'Deshi Banana export from Dinajpur',
         imgUrl:'https://i.ibb.co/xGPCw31/2687319.webp',
@@ -22,7 +26,9 @@ var Seller = [
         price:'140'
     },
     {
-        seller:'Your Needs',
+        name:'Your Needs',
+        key:'ABC19',
+        produce:'seller',
         title:'Banana',
         description:'bombai 20 Banana export from dinajpur',
         imgUrl:'https://i.ibb.co/kxYGfgT/banana-tree-bunch-ripe-bananas-detailed-view-to-growing-yellow-plantage-rainforest-mountains-funchal.jpg',
@@ -32,7 +38,9 @@ var Seller = [
         price:'130'
     },
     {
-        seller:'We are at Your Door',
+        name:'We are at Your Door',
+        key:'ABC20',
+        produce:'seller',
         title:'Banana',
         description:'Bombai ultra Banana export from saidpur',
         imgUrl:'https://i.ibb.co/zmwT54y/Banana.jpg',

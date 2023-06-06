@@ -17,7 +17,7 @@ const getUserDataKey =() => {
 
 const getDataKey = () => {
     const userData = getUser();
-    return `rapid/carts/${userData}`
+    return `MyShop/carts/${userData}`
 }
 
 // push to local storage: a temporary place for database

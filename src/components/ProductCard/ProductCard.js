@@ -3,7 +3,7 @@ import './ProductCard.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEllipsis, faHeart, faSearch } from '@fortawesome/free-solid-svg-icons';
 import {  } from '@fortawesome/free-regular-svg-icons';
-import { Button } from 'react-bootstrap';
+
 
 const ProductCard = (props) => {
   

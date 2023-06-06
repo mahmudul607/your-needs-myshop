@@ -1,9 +1,12 @@
 import React from 'react';
 import './BestSeller.css';
 import BestSellerCard from './BestSellerCard/BestSellerCard';
-import fakeData2 from '../../../fakeData2';
-const BestSeller = () => {
-    const seller = fakeData2
+import fakeData from '../../../fakeData';
+const BestSeller = (props) => {
+    const product = fakeData;
+ 
+    
+   const data = product.filter(pd => pd.produce === "seller");
     return (
         <div className='best-seller container mt-5 pb-3 br-bottom'>
         <div className='text-center'>
@@ -15,7 +18,7 @@ const BestSeller = () => {
         </div>
         <div className='best-seller-area'>
             {
-                seller.map(seller => <BestSellerCard seller={seller} key={seller.key}></BestSellerCard>)
+                data.map(pd => <BestSellerCard product={pd} key={pd.key} handleAddProduct={props.handleAddProduct}></BestSellerCard>)
             }
         </div>
     </div>

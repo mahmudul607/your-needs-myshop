@@ -1,10 +1,11 @@
+import Seller from "./Seller";
 import banana from "./banana";
 import jam from "./jam";
 import lichu from "./lichu";
 import mango from "./mango";
 
 
-const fakeData = [...lichu, ...mango, ...banana, ...jam];
+const fakeData = [...lichu, ...mango, ...banana, ...jam, ...Seller];
 
 const shuffle = a => {
     for (let i = a.length; i; i--) {
